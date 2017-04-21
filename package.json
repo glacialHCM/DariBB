@@ -1,0 +1,21 @@
+{
+  "name": "daribb",
+  "version": "0.0.1",
+  "description": "Bulletin Board",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glacialHCM/DariBB.git"
+  },
+  "author": "glacialHCM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glacialHCM/DariBB/issues"
+  },
+  "homepage": "https://github.com/glacialHCM/DariBB#readme"
+}
