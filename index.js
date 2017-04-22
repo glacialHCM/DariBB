@@ -1,5 +1,9 @@
 var express = require('express')
 
+var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
+app.engine('handlebars', handlebars.engine);
+app.set('vie engine', 'handlebars');
+
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
