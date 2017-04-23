@@ -22,6 +22,10 @@ app.get('/', function(req, res) {
   res.render('mainpage', { title: '메인 페이지' });
 });
 
+app.get('/write', function(req, res) {
+  res.render('writepage', {title: '글쓰기' });
+});
+
 
 //404
 app.use(function(req, res, next){
