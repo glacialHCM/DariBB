@@ -12,6 +12,8 @@ app.get('/', function(req, res) {
   res.render('mainpage', { title: '메인 페이지' });
 });
 
+var Remarkable = require('remarkable');
+var md = new Remarkable();
 
 //404
 app.use(function(req, res, next){
