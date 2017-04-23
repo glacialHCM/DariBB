@@ -1,19 +1,27 @@
 var express = require('express')
 
 var app = express();
+
+var Remarkable = require('remarkable');
+var md = new Remarkable();
+
 var handlebars = require('express-handlebars')
   .create({ defaultLayout:'main' });
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
+
+
+app.use('/static', express.static('public'))
+
+
 app.get('/', function(req, res) {
   res.render('mainpage', { title: '메인 페이지' });
 });
 
-var Remarkable = require('remarkable');
-var md = new Remarkable();
 
 //404
 app.use(function(req, res, next){
